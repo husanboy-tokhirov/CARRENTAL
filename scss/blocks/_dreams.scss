@@ -1,0 +1,128 @@
+.dreams-section {
+    padding: 100px 0 160px;
+}
+
+.dreams__content-wrapper {
+    max-width: 575px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dreams__title {
+    @include TextStyle($MT:0,$P:0,$FS:36px,$FW:600,$LH:43.88px,$CLR:var(--clr-black));
+}
+
+.dreams__text {
+    @include TextStyle($MT:10px,$P:0,$FS:18px,$FW:400,$LH:24px,$CLR:#555555);
+}
+
+.dreams__btn-wrapper {
+    @include Display($space:center);
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.dreams__cotegory-btn {
+    @include TextStyle($MT:0px,$P:19px 40px,$FS:16px,$FW:500,$LH:19.5px,$CLR:var(--clr-black));
+    border: 1.5px solid #E5E7EA;
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: var(--clr-green);
+        color: var(--clr-white);
+    }
+}
+
+.dreams__cotegory-btn-all-btn{
+    @include Display($space:center);
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dreams__cotegory-btn-all{
+    @include TextStyle($MT:0px,$P:18px 30px,$FS:18px,$FW:500,$LH:21.94px,$CLR:var(--clr-white));
+    background-color: var(--clr-green);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1.5px solid var(--clr-green);
+
+    &:hover{
+        background-color: var(--clr-white);
+        color: var(--clr-black);
+        border: 1.5px solid #E5E7EA;
+    }
+}
+
+.dreams__list {
+    @include Display($space:space-between);
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 24px;
+}
+.dreams__item {
+    width: 386px;
+    height: 433px;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+}
+
+.dreams__description {
+    padding: 30px 0px 0px 24px;
+}
+
+.dreams__ford-title {
+    padding-bottom: 8px;
+    @include TextStyle($MT:0px,$P:0px,$FS:24px,$FW:600,$LH:29.26px,$CLR:var(--clr-black));
+}
+
+.dreams__economy-car {
+    @include TextStyle($MT:0px,$P:0px,$FS:16px,$FW:500,$LH:19.5px,$CLR:#555555);
+}
+
+@media (max-width:831px){
+    .dreams__list{
+        @include Display($space:center);
+        gap: 10px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width:640px){
+    .dreams-section{
+        padding: 62px 0 160px;
+    }
+    .dreams__title {
+        @include TextStyle($MT:0,$P:0,$FS:24px,$FW:600,$LH:29.26px,$CLR:var(--clr-black));
+    }
+    .dreams__text {
+        @include TextStyle($MT:6px,$P:0,$FS:12px,$FW:400,$LH:14px,$CLR:#555555);
+    }
+    .dreams__btn-wrapper {
+        gap: 14px;
+        margin-top: 30px;
+    }
+    .dreams__cotegory-btn {
+        @include TextStyle($MT:0px,$P:14px 20px,$FS:14px,$FW:500,$LH:17.07px,$CLR:var(--clr-black));
+        border: 1.5px solid #E5E7EA;
+        border-radius: 100px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.3s;
+    
+        &:hover{
+            background-color: var(--clr-green);
+            color: var(--clr-white);
+        }
+    }
+}
+
+@media (max-width:500px){
+    .dreams__item{
+        width: 100%;
+    }
+}

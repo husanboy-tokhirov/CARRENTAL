@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./images/logo.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Car rental</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header">
+            <div class="header__left-wrapper">
+                <a class="header__logo-link" href="/">
+                    <img class="header__logo-img" src="./images/logo.svg" alt="Logo Img" width="150" height="40" />
+                </a>
+                <ul class="header__nav-list navbar">
+                    <li class="navbar__item navbar__link">Categories</li>
+                    <li class="navbar__item navbar__link">
+                        About Us
+                        <div class="popop__wrapper">
+                            <a class="popop__link" href="#">News</a>
+                            <a class="popop__link" href="#">Careers</a>
+                            <a class="popop__link" href="#">Locations</a>
+                        </div>
+                    </li>
+                    <li class="navbar__item navbar__link">
+                        Help center
+                        <div class="popop__wrapper">
+                            <a class="popop__link" href="#">FAQ</a>
+                            <a class="popop__link" href="#">Contact us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right-wrapper">
+                <a class="header__phone-number" href="tel:+18554200000">+1 855 420 0000</a>
+                <button class="header__mode-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79158C7.54165 3.28816 8.26503 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+                <button class="header__logout-btn">
+                    <span>Login</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.31248 14.4166C7.31248 14.0369 7.62028 13.7291 7.99998 13.7291H13.5C13.6265 13.7291 13.7291 13.6265 13.7291 13.4999L13.7291 2.49992C13.7291 2.37335 13.6265 2.27075 13.5 2.27075L7.99998 2.27075C7.62028 2.27075 7.31248 1.96295 7.31248 1.58325C7.31248 1.20356 7.62028 0.895752 7.99998 0.895752H13.5C14.3859 0.895752 15.1041 1.61396 15.1041 2.49992V13.4999C15.1041 14.3859 14.3859 15.1041 13.5 15.1041H7.99998C7.62028 15.1041 7.31248 14.7963 7.31248 14.4166Z"
+                            fill="currentColor" />
+                        <path
+                            d="M0.208313 9.0222C0.208313 9.52846 0.618718 9.93887 1.12498 9.93887H5.5763C5.59732 10.2647 5.62363 10.5902 5.65524 10.9154L5.68243 11.1952C5.72664 11.65 6.20968 11.9225 6.62183 11.7249C8.29742 10.9219 9.81431 9.82305 11.0995 8.48117L11.127 8.4525C11.3718 8.19686 11.3718 7.79372 11.127 7.53809L11.0995 7.50942C9.81431 6.16753 8.29742 5.06866 6.62183 4.26564C6.20969 4.06812 5.72664 4.34055 5.68243 4.79544L5.65524 5.0752C5.62363 5.40037 5.59732 5.72592 5.5763 6.05173L1.12498 6.05173C0.618719 6.05173 0.208313 6.46214 0.208313 6.9684V9.0222Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+                <button class="header__menu-btn">
+                    <img src="./images/burger.svg" alt="hamburger" width="40" height="40" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="hero-section">
+            <div class="container hero">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper__content-wrapper">
+                                <h2 class="swiper__title">Compact cars</h2>
+                                <p class="swiper__text">
+                                    Rent cars as you are comfortable and where you are
+                                    comfortable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__content-wrapper">
+                                <h2 class="swiper__title">Compact cars</h2>
+                                <p class="swiper__text">
+                                    Rent cars as you are comfortable and where you are
+                                    comfortable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__content-wrapper">
+                                <h2 class="swiper__title">Compact cars</h2>
+                                <p class="swiper__text">
+                                    Rent cars as you are comfortable and where you are
+                                    comfortable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <form class="hero__form">
+                    <input class="hero__form-input" type="text" placeholder="Find the car of your dreams" />
+                    <button type="submit" class="hero__form-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.3851 15.4458C11.7348 17.5685 7.85538 17.4014 5.3986 14.9446C2.76256 12.3086 2.76256 8.0347 5.3986 5.39866C8.03464 2.76262 12.3085 2.76262 14.9445 5.39866C17.4013 7.85544 17.5684 11.7349 15.4457 14.3851L20.6014 19.5408C20.8943 19.8337 20.8943 20.3085 20.6014 20.6014C20.3085 20.8943 19.8336 20.8943 19.5407 20.6014L14.3851 15.4458ZM6.45926 13.8839C4.40901 11.8337 4.40901 8.50957 6.45926 6.45932C8.50951 4.40907 11.8336 4.40907 13.8839 6.45932C15.9326 8.50807 15.9341 11.8288 13.8884 13.8794C13.8869 13.8809 13.8854 13.8824 13.8839 13.8839C13.8824 13.8854 13.8809 13.8869 13.8794 13.8884C11.8288 15.9342 8.50801 15.9327 6.45926 13.8839Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="dreams-section">
+            <div class="container dreams">
+                <div class="dreams__content-wrapper">
+                    <h2 class="dreams__title">Choose the car of your dreams</h2>
+                    <p class="dreams__text">
+                        We provide our customers with the most incredible driving
+                        emotions. That is why there are only world-class cars in our fleet
+                    </p>
+                </div>
+                <div class="dreams__btn-wrapper">
+                    <button class="dreams__cotegory-btn">Compact</button>
+                    <button class="dreams__cotegory-btn">Sports cars</button>
+                    <button class="dreams__cotegory-btn">Vans</button>
+                </div>
+                <ul class="dreams__list">
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Ford Fiesta</h3>
+                            <span class="dreams__economy-car">Economy Car</span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/ford.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Nissan Versa</h3>
+                            <span class="dreams__economy-car">Compact Car</span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/nissan.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Toyota Corolla</h3>
+                            <span class="dreams__economy-car">Mid-size Car</span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/toyota.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Nissan Rogue</h3>
+                            <span class="dreams__economy-car">Mid-size SUV</span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/mid.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Chevy Traverse</h3>
+                            <span class="dreams__economy-car">Full-size SUV </span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/full.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dreams__item">
+                        <div class="dreams__description">
+                            <h3 class="dreams__ford-title">Nissan Altima</h3>
+                            <span class="dreams__economy-car">Full-size Car</span>
+                        </div>
+                        <img style="margin-top: 16px" width="386" height="220" src="./images/altima.png" alt="ford" />
+                        <div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/user.svg" alt="user" />
+                                    <span>5 Seats</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/automatic.svg" alt="user" />
+                                    <span>Automatic</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 66px; padding: 16px 0px 0px 24px">
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/file.svg" alt="user" />
+                                    <span>21+ Years</span>
+                                </div>
+                                <div style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 19.5px;
+                    ">
+                                    <img src="./images/waiter.svg" alt="user" />
+                                    <span>1-lit/2.5 km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dreams__cotegory-btn-all-btn">
+                    <button class="dreams__cotegory-btn-all">View all cars</button>
+                </div>
+            </div>
+        </section>
+        <section class="category-section">
+            <div class="container category">
+                <div class="category__category-wrapper">
+                    <span class="category__title-span">More than 50 brands of cars</span>
+                    <marquee behavior="scroll" direction="left" scrollamount="5">
+                        <div class="category__content-img">
+                            <img src="./images/ford.svg" alt="ford" />
+                            <img src="./images/nissan.svg" alt="nissan" />
+                            <img src="./images/tiyota.svg" alt="toyota" />
+                            <img src="./images/dodge.svg" alt="dodge" />
+                            <img src="./images/hyundai.svg" alt="hyundai" />
+                            <img src="./images/jeep.svg" alt="jeep" />
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container service">
+                <div class="service__text-wrapper">
+                    <div class="service__text-content">
+                        <h2 class="service__title">Unparalleled service</h2>
+                        <p class="service__text">Whether you are looking for Newark Airport car rental, an insurance replacement vehicle or minivan to take on vacation Car rental has it all.</p>
+                    </div>
+                    <div  style="margin-bottom: 160px;">
+                        <div class="service__big-wrapper" style="display: flex; gap: 20px; padding-top: 40px;">
+                            <div class="service__media">
+                                <div class="service__description">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="service__title-description">Book online, pay online</h3>
+                                        <img class="service__service-img" src="./images/laptop.svg" alt="laptop">
+                                    </div>
+                                    <p class="service__text-description">Complete the booking process A-Z, with our easy online system</p>
+                                </div>
+                            </div>
+                            <div class="service__media">
+                                <div class="service__description">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 style="width: 260px;" class="service__title-description">Guaranteed car reservation</h3>
+                                        <img class="service__service-img" src="./images/qalqon.svg" alt="laptop">
+                                    </div>
+                                    <p class="service__text-description">When you book with Car rental, you can be confident your car will be waiting for you</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__big-wrapper" style="display: flex; gap: 20px; padding-top: 20px;">
+                            <div class="service__media">
+                                <div class="service__description">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 style="width: 278px;" class="service__title-description">Unparalleled customer service</h3>
+                                        <img class="service__service-img" src="./images/clock.svg" alt="laptop">
+                                    </div>
+                                    <p class="service__text-description">We're here to help. We pride ourselves in our customer service</p>
+                                </div>
+                            </div>
+                            <div class="service__media">
+                                <div class="service__description">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 style="width: 288px;" class="service__title-description">No reservation or booking fees</h3>
+                                        <img class="service__service-img" src="./images/wallet.svg" alt="laptop">
+                                    </div>
+                                    <p class="service__text-description">No cancellation fees if cancelled 24 hours prior to booking time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

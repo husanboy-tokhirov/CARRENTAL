@@ -1,0 +1,187 @@
+.site-header{
+    padding: 18px 0;
+    border-bottom: 1.5px solid #626262
+}
+
+.header{
+    @include Display($space:space-between);
+}
+.header__left-wrapper{
+    @include Display($space:start);
+    gap: 20px;
+}
+.navbar{
+    @include Display($space:start);
+}
+
+.navbar__item{
+    position: relative;
+}
+
+.navbar__item{
+    position: relative;
+    @include TextStyle($MT:0px,$P:18px 16px,$FS:18px,$FW:500,$LH:21.94px,$CLR:var(--clr-black));
+}
+.navbar__item:nth-child(2) > .navbar__item:nth-child(3){
+    padding-right: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.navbar__item:nth-child(2) > .navbar__link::before, .navbar__item:nth-child(3) > .navbar__link::before{
+    content: "";
+    background-image: url("../../images/Icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 12px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.header__right-wrapper{
+    @include Display($space:start);
+}
+.header__phone-number{
+    margin-right: 24px;
+    @include TextStyle($MT:0,$P:18px,$FS:18px,$FW:600,$LH:21.94px,$CLR:var(--clr-black));
+}
+.header__mode-btn{
+    @include Display($space:center);
+    width: 58px;
+    height: 58px;
+    background-color: #727272;
+    border-radius: 50%;
+    border: none;
+    color: var(--clr-white);
+    margin-right: 16px;
+}
+.header__logout-btn{
+    @include Display($space:start);
+    @include TextStyle($MT:0,$P:18px 30px,$FS:18px,$FW:500,$LH:21.94px,$CLR:var(--clr-white));
+    font-family: "Montserrat", serif;
+    background-color: var(--clr-green);
+    border-radius: 100px;
+    border: 2px solid transparent;
+    gap: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: transparent;
+        border-color: var(--clr-green);
+        color: var(--clr-green);
+    }
+}
+.popop__wrapper{
+    padding: 10px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    border: none;
+
+    margin-top: 10px;
+    transition: all 0.3s;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px #00000026;
+    z-index: 9999;
+}
+.popop__link{
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 18px 0px 18px  6px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: black;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: var(--clr-green);
+        color: white;
+    }
+}
+.navbar__item:nth-child(2):hover::before{
+    transform: rotate(180deg);
+}
+.navbar__item:nth-child(2):hover > .popop__wrapper{
+    height: 195px;
+    padding: 10px;
+    border: 1px solid gray;
+    opacity: 1;
+}
+.navbar__item:nth-child(3):hover > .popop__wrapper{
+    height: 140px;
+    padding: 10px;
+    border: 1px solid gray;
+    opacity: 1;
+}
+
+.header__menu-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 16px;
+}
+
+@media (max-width: 1053px) {
+    .swiper-slide {
+        background-position: center;
+    }
+    
+    .swiper-slide:nth-child(1) {
+        background-image: url("../../images/hero-tablet.png");
+    }
+    
+    .navbar, 
+    .header__phone-number {
+        display: none;
+    }
+    
+    .header__menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 834px) {
+    .header__mode-btn,
+    .header__logout-btn {
+        display: none;
+    }
+    
+    .site-header {
+        padding: 27px 0;
+    }
+}
+
+@media (max-width: 730px) {
+    .swiper-slide {
+        padding-top: 40px;
+    }
+    
+    .swiper-slide:nth-child(1) {
+        background-image: url("../../images/hero-mobile.png");
+    }
+    
+    .hero__form {
+        width: 100%;
+    }
+    
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        transform: translate(0, -40px) !important;
+    }
+    
+    .swiper__title {
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+}

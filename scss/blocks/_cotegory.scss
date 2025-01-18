@@ -1,0 +1,11 @@
+.category__title-span {
+    @include TextStyle($MT:0px,$P:0px,$FS:24px,$FW:500,$LH:29.26px,$CLR:var(--clr-black));
+}
+
+.category__content-img{
+    margin-top: 30px;
+    @include Display($space:center);
+    justify-content: center;
+    gap: 66px;
+    margin-bottom: 160px;
+}
