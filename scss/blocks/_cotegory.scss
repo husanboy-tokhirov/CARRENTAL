@@ -1,3 +1,7 @@
+.category__category-wrapper{
+    padding-top: 160px;
+}
+
 .category__title-span {
     @include TextStyle($MT:0px,$P:0px,$FS:24px,$FW:500,$LH:29.26px,$CLR:var(--clr-black));
 }

@@ -31,6 +31,20 @@
   --clr-green:#299764;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -569,6 +583,10 @@ body {
     width: 100%;
   }
 }
+.category__category-wrapper {
+  padding-top: 160px;
+}
+
 .category__title-span {
   margin-top: 0px;
   padding: 0px;
@@ -758,5 +776,182 @@ body {
     line-height: 20px;
     color: #555555;
     margin-top: 10px;
+  }
+}
+.community-section {
+  padding: 100px 0;
+  background-color: #F5F5F5;
+}
+
+.community {
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.community__left-wrapper {
+  width: 36%;
+  padding: 70px 0 70px 70px;
+}
+
+.community__auth {
+  display: inline-block;
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #4285F4;
+  margin-bottom: 16px;
+  padding-left: 28px;
+  position: relative;
+}
+.community__auth::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/google.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.community_title {
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.community__line {
+  width: 90%;
+  height: 2px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+}
+
+.community__text {
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.community__link {
+  display: inline-block;
+  width: 194px;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  background-image: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 100px;
+  border: none;
+  border: 1.5px solid rgb(244, 141, 213);
+}
+
+.community__right-wrapper {
+  width: 60%;
+  padding: 50px 0 40px 40px;
+  background-color: #299764;
+}
+
+.community__list {
+  display: flex;
+  gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.community__item {
+  min-width: 420px;
+  height: 333px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+@media (max-width: 1034px) {
+  .community-section {
+    padding: 30px 20px;
+  }
+  .community {
+    flex-direction: column;
+  }
+  .community__left-wrapper, .community__right-wrapper {
+    width: 100%;
+  }
+  .community__left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 24px !important;
+  }
+  .community__left-top-wrapper {
+    max-width: 320px;
+  }
+  .community__left-bottom-wrapper {
+    max-width: 275px;
+  }
+  .community_title {
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  .community__line {
+    width: 2px;
+    height: 108px;
+  }
+}
+@media (max-width: 822px) {
+  .community__left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+  }
+  .community__left-top-wrapper {
+    max-width: 100%;
+  }
+  .community__left-bottom-wrapper {
+    max-width: 100%;
+  }
+  .community_title {
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  .community__line {
+    width: 100%;
+    height: 2px;
+  }
+  .community__right-wrapper {
+    padding: 20px 16px;
+  }
+  .community__item {
+    min-width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
